@@ -25,7 +25,26 @@ const products = [
         img: '../assets/products/pack3.jpg',
         stock: 20,
         description: 'El pack número 3 del mundo mundial'
+    },
+    {
+        id: '4',
+        name: 'Producto Individual',
+        price: 30000,
+        category: 'producto',
+        img: '../assets/products/producto.jpg',
+        stock: 20,
+        description: 'El mejor producto mundo mundial'
+    },
+    {
+        id: '5',
+        name: 'Servicio Individual',
+        price: 30000,
+        category: 'servicio',
+        img: '../assets/products/servicio.jpg',
+        stock: 20,
+        description: 'El mejor servicio del mundo mundial'
     }
+    
 
 ]
 
@@ -44,4 +63,13 @@ export const getProductById = (productId) => {
             resolve(products.find(prod => prod.id === productId))
         },500)
     })
+}
+
+export const getProductsByCategory = (productCategory) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const productsByCategory = products.filter(prod => prod.category === productCategory);
+            resolve(productsByCategory);
+        }, 500);
+    });
 }

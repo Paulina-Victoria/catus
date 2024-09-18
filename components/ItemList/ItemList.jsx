@@ -1,7 +1,7 @@
 import './ItemList.css'
 import Item from '../Item/Item'
 
-const Itemlist = ({products}) => {
+const ItemList = ({products}) => {
     return(
         <div className='ListGroup'>
             {products.map(prod => <Item key={prod.id} {...prod}/>)}
@@ -9,4 +9,4 @@ const Itemlist = ({products}) => {
     )
 }
 
-export default Itemlist
+export default ItemList
