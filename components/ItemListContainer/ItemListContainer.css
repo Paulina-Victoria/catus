@@ -1,0 +1,27 @@
+/* ItemListContainer.css */
+
+/* Estilos para el contenedor principal */
+.ItemListContainer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Estilos para el saludo */
+.ItemListContainer h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .ItemListContainer {
+        padding: 10px;
+    }
+
+    .ItemListContainer h1 {
+        font-size: 1.5em;
+    }
+}

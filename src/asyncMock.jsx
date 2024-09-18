@@ -4,7 +4,7 @@ const products = [
         name: 'Pack Oro',
         price: 10000,
         category: 'pack',
-        img: '../assets/products/pack1.jpg',
+        img: '../src/assets/products/pack1.jpg',
         stock: 20,
         description: 'El pack número 1 del mundo mundial'
     },
@@ -13,7 +13,7 @@ const products = [
         name: 'Pack Platino',
         price: 20000,
         category: 'pack',
-        img: '../assets/products/pack2.jpg',
+        img: '../src/assets/products/pack2.jpg',
         stock: 20,
         description: 'El pack número 2 del mundo mundial'
     },
@@ -22,7 +22,7 @@ const products = [
         name: 'Pack Titanium',
         price: 30000,
         category: 'pack',
-        img: '../assets/products/pack3.jpg',
+        img: '../src/assets/products/pack3.jpg',
         stock: 20,
         description: 'El pack número 3 del mundo mundial'
     },
@@ -31,7 +31,7 @@ const products = [
         name: 'Producto Individual',
         price: 30000,
         category: 'producto',
-        img: '../assets/products/producto.jpg',
+        img: '../src/assets/products/producto.jpg',
         stock: 20,
         description: 'El mejor producto mundo mundial'
     },
@@ -40,7 +40,7 @@ const products = [
         name: 'Servicio Individual',
         price: 30000,
         category: 'servicio',
-        img: '../assets/products/servicio.jpg',
+        img: '../src/assets/products/servicio.jpg',
         stock: 20,
         description: 'El mejor servicio del mundo mundial'
     }

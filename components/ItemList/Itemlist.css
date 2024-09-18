@@ -1,0 +1,21 @@
+/* ItemList.css */
+
+/* Estilos para el contenedor de la lista de productos */
+.ListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .ListGroup {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}

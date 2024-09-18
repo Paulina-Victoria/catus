@@ -1,0 +1,71 @@
+/* NavBar.css */
+
+/* Estilos para el contenedor principal de la barra de navegación */
+.NavBar {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center;
+    background-color: #0d6efd; /* Color primario */
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el título o logo */
+.NavBar h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+/* Estilos para el contenedor de las categorías */
+.Categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Mantenemos las categorías alineadas a la izquierda */
+    flex: 1; /* Hace que las categorías ocupen el espacio disponible */
+}
+
+/* Estilos para los enlaces de las categorías */
+.Option, .ActiveOption {
+    color: #fff;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.Option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ActiveOption {
+    background-color: #fff;
+    color: #0d6efd;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .NavBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Categories {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .Option, .ActiveOption {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .CartWidget {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
